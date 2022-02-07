@@ -41,15 +41,15 @@ return [
             'provider' => 'users',
         ],
 
-        'admin' => [
-            'driver' => 'session',
-            'provider' => 'admins',
-        ],
+        // 'admin' => [
+        //     'driver' => 'session',
+        //     'provider' => 'admins',
+        // ],
 
-        'writer' => [
-            'driver' => 'session',
-            'provider' => 'writers',
-        ],
+        // 'writer' => [
+        //     'driver' => 'session',
+        //     'provider' => 'writers',
+        // ],
 
         'api' => [
             'driver' => 'token',
@@ -80,14 +80,14 @@ return [
             'model' => App\User::class,
         ],
 
-        'admins' => [
-            'driver' => 'eloquent',
-            'model' => App\Admin::class,
-        ],
-        'writers' => [
-            'driver' => 'eloquent',
-            'model' => App\Writer::class,
-        ],
+        // 'admins' => [
+        //     'driver' => 'eloquent',
+        //     'model' => App\Admin::class,
+        // ],
+        // 'writers' => [
+        //     'driver' => 'eloquent',
+        //     'model' => App\Writer::class,
+        // ],
 
         // 'users' => [
         //     'driver' => 'database',

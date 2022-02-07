@@ -1,4 +1,4 @@
-@extends('layouts.auth')
+@extends('layouts.web')
 
 @section('content')
 <div class="container">
@@ -8,7 +8,8 @@
                 <div class="card-header">Dashboard</div>
 
                 <div class="card-body">
-                        Hi there, regular user
+                    Hi, {{ \Auth::guard('imissu-web')->user()->name }}
+                    or {{ auth('imissu-web')->user()->name }}!
                 </div>
             </div>
         </div>

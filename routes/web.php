@@ -11,6 +11,8 @@
 |
 */
 
+require __DIR__.'/sso.php';
+
 Route::view('/', 'welcome');
 Auth::routes();
 
@@ -24,6 +26,7 @@ Auth::routes();
 // Route::post('/register/admin', 'Auth\RegisterController@createAdmin');
 // Route::post('/register/writer', 'Auth\RegisterController@createWriter');
 
-Route::view('/home', 'home')->middleware('auth');
+Route::get('/home', 'HomeController@index')->middleware('imissu-web');
+Route::get('/web/dashboard', 'Web\DashboardController@index')->middleware('imissu-web');
 // Route::view('/admin', 'admin')->middleware('auth:admin');
 // Route::view('/writer', 'writer')->middleware('auth:writer');

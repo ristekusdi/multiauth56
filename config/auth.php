@@ -41,6 +41,11 @@ return [
             'provider' => 'users',
         ],
 
+        'imissu-web' => [
+            'driver' => 'imissu-web',
+            'provider' => 'imissu-web',
+        ],
+
         // 'admin' => [
         //     'driver' => 'session',
         //     'provider' => 'admins',
@@ -78,6 +83,11 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model' => App\User::class,
+        ],
+
+        'imissu-web' => [
+            'driver' => 'imissu-web',
+            'model' => RistekUSDI\SSO\Models\Web\User::class,
         ],
 
         // 'admins' => [
